@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafìo Final</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="boxPrincipal">
+    <h2 class="tituloPrincipal">Cotizador de Criptomodenas</h2>
+    <div class="selectores">
+      <select id="selectPais" class="opciones">
+        <option disabled selected value=''>Seleccione la modena de su Pais</option>
+        <option value="USD">Dolar Americano</option>
+        <option value="BOB">Boliviano</option>
+        <option value="BRL">Brazilian Real</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="CLP">Chilean Peso</option>
+        <option value="COP">Colombian Peso</option>
+        <option value="EUR">Euro Español</option>
+        <option value="JPY">Yen Japan</option>
+        <option value="MXN">Mexico Peso</option>
+        <option value="PEN">Peru Sol</option>
+        <option value="USD">Ecuador</option>
+      </select>
+      <select id="criptoPais" class="opciones">
+        <option disabled selected value=''>Seleccione el tipo de CriptoMoneda</option>
+        <option value="BTC">Bitcoin</option>
+        <option value="ETH">Ethereum</option>
+        <option value="USDT">Tether</option>
+        <option value="USDC">USD Coin</option>
+        <option value="XRP">XRP</option>
+        <option value="SOL">Solana</option>
+        <option value="BUSD">BUSD</option>
+        <option value="ADA">Cardano</option>
+        <option value="DOGE">Dogecoin</option>
+      </select>
+      <button id='btncotizador'>Cotizador</button>
+    </div>
+  </div>
+  <div id="DatosCotizador"></div>
+  <script src="main.js"></script>
+</body>
+</html>

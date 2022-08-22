@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Telex&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+* {
+  --principal-color: rgb(240, 240, 240) ;
+  --second-color: #6090BF;
+  --three-color: #0A1623;
+  padding: 0;
+  margin: 0;
+  font-family: 'Telex', sans-serif;
+  /* outline: 1px groove limegreen !important; */
+}
+
+body {
+  background-size: cover;
+  background-image: url(https://jesuitas.lat/images/noticias/social/2021/10/Bitcoin.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fondo{
+
+}
+h2, .tituloApi{
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: var(--second-color); 
+  text-transform: uppercase;
+  text-align: center;
+  justify-items: center;
+  font-family: 'Rubik Distressed', cursive;
+}
+.boxPrincipal{
+  background-color: var(--principal-color);
+  border-radius: 0.5rem;
+  border-style: none;
+  padding: 2rem;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  box-shadow: 10px 11px 4px -4px rgba(0,0,0,0.39);
+  -webkit-box-shadow: 10px 11px 4px -4px rgba(0,0,0,0.39);
+  -moz-box-shadow: 10px 11px 4px -4px rgba(0,0,0,0.39);
+}
+.boxError > h2{
+  color: white;
+  font-family: 'Telex', sans-serif;
+}
+.boxResultado{
+  margin: 1rem 0;
+  width: 25rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--three-color);
+  box-shadow: 10px 11px 4px -4px rgba(0,0,0,0.39);
+-webkit-box-shadow: 10px 11px 4px -4px rgba(0,0,0,0.39);
+-moz-box-shadow: 10px 11px 4px -4px rgba(0,0,0,0.39);
+} 
+.selectores{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 0.2rem;
+margin: 3rem;
+}
+
+.opciones, button{
+  border-radius: 0.4rem;
+  padding: 0.4rem;
+  margin: 0.4rem;
+  width: 300px;
+  height: fit-content(1px);
+}
+img{
+  width: 8rem;
+}
+button{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--second-color);
+  border-style: none;
+}
+.datosApi{
+  padding: 0.4rem 0;
+  font-family: 'Telex', sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+@media (min-width: 600px) {
+  .boxPrincipal, .boxResultado {
+    width: 400px;
+  }
+}
+/* spinner */
+.pSpinner{
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--second-color);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Lato', 'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Sans-Serif;
+  margin-top: 50px;
+}
+
+.spinner {
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: var(--second-color);
+  margin: 0 auto;
+  margin-top: 20px;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
