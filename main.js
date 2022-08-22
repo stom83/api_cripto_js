@@ -14,8 +14,7 @@ btn_Cotizador.addEventListener("click", (e) => {
 
 // Carga de APi
 async function cargaApi(pais, moneda) {
-  const api_Key =
-    "1e92ec363f95df4298dcc01294e7ff477314c53dae06a7217e93987139c86860";
+  const api_Key = "1e92ec363f95df4298dcc01294e7ff477314c53dae06a7217e93987139c86860";
   const api_Url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${moneda}&tsyms=${pais}&api_key=${api_Key}`;
   try {
     const api = await fetch(api_Url);
